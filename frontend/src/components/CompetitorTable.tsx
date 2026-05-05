@@ -767,9 +767,17 @@ export default function CompetitorTable({ products, myAsin, currencySymbol }: Pr
                           <div className="bg-white/4 rounded-lg px-3 py-2.5 flex items-center gap-2">
                             <span className="text-gray-600">🖼</span>
                             <p className="text-xs text-gray-500 italic">
-                              Image-based A+ content. Click ↗ to view on Amazon.
+                              Image-based A+ content.
                             </p>
                           </div>
+                          <a
+                            href={`https://www.amazon.in/dp/${modalProduct.asin}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-xs text-orange-400 hover:text-orange-300 mt-2 inline-flex items-center gap-1 transition-colors"
+                          >
+                            Full details on Amazon ↗
+                          </a>
                         </div>
                       );
                     }

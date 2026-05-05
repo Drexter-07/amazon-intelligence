@@ -257,11 +257,16 @@ export default function MarketOverview({ summary, products, currencySymbol, myAs
     discount_percentage: p.discount_percentage || 0,
   }));
 
-  // Color logic: products[0] = blue (user), products[1] = orange (top competitor), rest = muted
+  // Identify user's product by ASIN, not position
+  const myIndex = myAsin ? chartData.findIndex(d => d.asin === myAsin) : -1;
+
+  // Top competitor = highest revenue product that is NOT the user's
+  const topCompetitorIndex = chartData.findIndex((_, i) => i !== myIndex);
+
   const getBarColor = (index: number): string => {
-    if (index === 0) return '#3b82f6';
-    if (index === 1) return '#f97316';
-    return '#475569';
+    if (index === myIndex) return '#3b82f6';            // blue = Your Listing
+    if (index === topCompetitorIndex) return '#f97316';  // orange = Top Competitor
+    return '#475569';                                    // gray = Others
   };
 
   const maturity = maturityConfig[summary.marketMaturity] || maturityConfig.growing;
