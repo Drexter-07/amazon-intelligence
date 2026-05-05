@@ -1,6 +1,15 @@
 # Pixii Intelligence Dashboard ✦
 
-![Pixii Intelligence](https://via.placeholder.com/1200x630.png?text=Pixii+Intelligence+Dashboard)
+### Pixii Intelligence
+<img width="2516" height="1380" alt="image" src="https://github.com/user-attachments/assets/58b30cad-1a95-4640-b951-ef0416347c40" />
+
+
+
+
+## Dashboard
+
+<img width="2533" height="1395" alt="image" src="https://github.com/user-attachments/assets/5f9e9b88-cd4a-4df9-b093-6b60497ff3c6" />
+
 
 Pixii Intelligence is a production-grade Amazon Market Intelligence platform. It automatically scrapes competitor data, analyzes customer reviews, estimates revenue from BSR, and generates a comprehensive 5-Act strategic intelligence report using AI.
 
@@ -30,7 +39,7 @@ graph TD
 - **Frontend**: Next.js 14, React, Tailwind CSS, Recharts, Lucide Icons
 - **Backend**: Python, FastAPI, Pydantic (Schema Validation)
 - **Data Gathering**: Oxylabs E-Commerce API (formerly Apify/ScrapingBee)
-- **AI Engine**: Anthropic Claude 3 (Opus/Sonnet) for JSON extraction and sentiment analysis
+- **AI Engine**: Anthropic Claude 4.5 (Sonnet) for JSON extraction and sentiment analysis
 
 ## 🛠 Setup Instructions
 
